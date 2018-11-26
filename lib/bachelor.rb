@@ -1,6 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   data[season].map { |contestant|
-    if contestant["status"].downcase == "winner"  contestant["name"].split(" ").first
+    if contestant["status"].downcase == "winner"  
+      return contestant["name"].split(" ").first
     end
   }
 end
