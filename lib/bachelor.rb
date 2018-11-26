@@ -7,7 +7,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data.map { |season, contestants|
+  data.map { | contestants|
     contestants.map { |contestant|
       if contestant["occupation"] == occupation
         return contestant["name"]
