@@ -9,7 +9,7 @@ end
 def get_contestant_name(data, occupation)
   data.map { |contestant|
     if contestant["occupation"].downcase == occupation  
-      return contestant["name"].split(" ").first
+      return contestant["name"]
     end
   }
 end
